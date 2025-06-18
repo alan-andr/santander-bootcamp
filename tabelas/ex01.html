@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 200px;
+            margin: auto;
+        }
+        
+        th, td {
+            border:1px solid black;
+            text-align: center;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(128, 128, 128, 0.384);
+        }
+    </style>
+</head>
+<body>
+    <table summary="Tabela de dados pessoais" cellspacing="0" cellpadding="4">
+        <caption>Tabela de Dados</caption>
+        <thead>
+            <tr>
+                <th colspan="3">Minha tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alan</td>
+                <td>23</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>Feminino</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>36</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>Gerson</td>
+                <td>40</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>54</td>
+                <td>Masculino</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
