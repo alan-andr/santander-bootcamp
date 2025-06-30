@@ -13,11 +13,12 @@
     box-sizing: border-box;
 }
 
+
 span {
     color: #33A8DB;
 }
 
-header.banner{
+header.banner {
     background-color: #040A0D;
     background-image: linear-gradient(rgba(0, 0, 0, .6), 
     rgba(49, 168, 221, .2),
@@ -57,7 +58,8 @@ div.banner-content {
     font-weight: 400;
     text-wrap: 300;
     font-size: 1.2rem;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -107,12 +109,12 @@ main.content {
 }
 
 section.course-section {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
     display: flex;
     flex-flow: column;
-    padding: 5rem;
-    
+    padding: 3rem 20px;
 
 }
 
@@ -164,10 +166,11 @@ section.image-section {
     background-attachment: fixed;
     border-bottom: 1px solid #2792cc71;
     border-top: 1px solid #2792cc71;
-    padding: 200px;
+    padding: 60px 20px;
 
     display: flex;
     justify-content: start;
+    align-items: center;
 }
 
 section.image-section > p {
@@ -182,7 +185,7 @@ section.image-section > p {
 
 section.image-section-02 {
     border-bottom: 1px solid #2792cc71;
-    padding: 10px;
+    padding: 60px 20px;
 }
 
 section.image-section-02 > h2 {
@@ -202,8 +205,10 @@ section.image-section-02 > img {
 }
 
 section.image-section-02 > p {
-    width: 800px;
-    margin: 20px auto 70px auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 50px 20px;
+    margin: auto;
 }
 
 footer {

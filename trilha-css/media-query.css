@@ -7,4 +7,21 @@
 1280 = desktops maiores e monitores
 */
 
+@media screen and (max-width: 480px) {
+
+    div.banner-content > h1 {
+        font-size: 1.5rem;
+    }
+
+    div.banner-content > p {
+        font-size: .8rem;
+        width: 300px;
+    }
+
+    div.banner-content > button {
+        font-size: .5rem;
+        width: 150px;
+    }
+}
+
 
