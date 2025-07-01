@@ -14,6 +14,14 @@
 }
 
 
+body,html {
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 1.5;
+}
+
 span {
     color: #33A8DB;
 }
@@ -37,8 +45,8 @@ header.banner {
 
 div.logo {
     background-color: rgba(0, 0, 0, .2);
-    width: 260px;
-    height: 260px;
+    max-width: 260px;
+    max-height: 260px;
     margin: auto;
     border-radius: 50%;
     padding: 16px;
@@ -46,6 +54,7 @@ div.logo {
 
 div.logo > img {
     max-width: 100%;
+    display: block;
     height: 100%;
     object-fit: contain;
     margin: auto;
@@ -61,6 +70,7 @@ div.banner-content {
     width: 100%;
     max-width: 600px;
     margin: auto;
+    
 }
 
 div.banner-content > h1 {
@@ -73,21 +83,24 @@ div.banner-content > h1 {
 }
 
 div.banner-content > p {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin: auto;
 }
 
 div.banner-content > button {
     margin: 20px 20px;
-
+    
     background-color: transparent;
     font-size: 1rem;
     color: #31A8DD;
     padding: 12px;
     border-color: #31A8DD;
     outline-color: transparent;
-    width: 350px;
+
+    max-width: 350px;
     height: 60px;
+
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: bolder;
@@ -114,8 +127,9 @@ section.course-section {
     margin: auto;
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
     padding: 3rem 20px;
-
 }
 
 section.course-section > h2 {
@@ -131,8 +145,9 @@ section.course-section > p {
 }
 
 section.course-section > button {
-    margin: 10px auto;
-    width: 550px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 450px;
     height: 55px;
     padding: 10px;
     border-radius: 30px;

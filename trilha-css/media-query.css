@@ -9,18 +9,57 @@
 
 @media screen and (max-width: 480px) {
 
+    div.logo {
+        max-width: 100%;
+        border-radius: 50%;
+        padding: 5px;
+        margin: none;
+    }
+
     div.banner-content > h1 {
         font-size: 1.5rem;
     }
 
     div.banner-content > p {
         font-size: .8rem;
-        width: 300px;
+        max-width: 300px;
     }
 
     div.banner-content > button {
-        font-size: .5rem;
-        width: 150px;
+        font-size: .6rem;
+        max-width: 160px;
+        height: 50px;
+    }
+
+    section.course-section > h2 {
+        font-size: 1.5rem;
+    }
+
+    section.course-section > p {
+        font-size: .8rem;
+    }
+
+    section.course-section > button {
+        max-width: 200px;
+        font-size: .6rem;
+    }
+
+    section.image-section > p {
+        font-size: 1.5rem;
+        max-width: 200px;
+        background-position: center center;
+    }
+
+    section.image-section-02 > h2 {
+        font-size: 1.5rem;
+    }
+
+    section.image-section-02 > p {
+        font-size: .8rem;
+    }
+
+    footer > p {
+        font-size: .8rem;
     }
 }
 
