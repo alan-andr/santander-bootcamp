@@ -147,7 +147,7 @@ section.course-section > p {
 section.course-section > button {
     margin: 10px 0;
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     height: 55px;
     padding: 10px;
     border-radius: 30px;
@@ -167,7 +167,7 @@ section.course-section > button {
         background-color: rgb(255, 255, 255);
         color: black;
         transition-duration: .3s;
-        font-weight: 900;
+        font-weight: 700;
     }
 }
 
