@@ -37,7 +37,7 @@ header input[type="text"] {
 
 main {
     background: rgb(247, 247, 247);
-    padding: 20px 60px;
+    padding: 40px 60px;
 
     display: flex;
     justify-content: space-between;
@@ -92,49 +92,46 @@ div.video-principal > p {
 }
 
 div.sidebar {
-    display: flex;
-    flex-flow: row nowrap;
-    max-width: 400px;
+    min-width: 400px;
     min-height: 1000px;
 }
 
-div.sidebar > ul.thumb {
+div.sidebar > ul.thumb-content {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 20px 0;
 }
 
-div.sidebar > ul.thumb > li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-div.sidebar > ul.thumb > li > img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-}
-
-div.sidebar > ul.description {
+div.sidebar > ul.thumb-content > li {
     display: flex;
-    flex-flow:column nowrap;
-    justify-content: space-around;
-    gap: 0;
-}
-
-div.sidebar > ul.description > li {
-    display: inline-block;
     list-style-type: none;
-    margin: 0 15px;
+    gap: 0px 15px;
 }
 
-div.sidebar > ul.description > li > h1 {
+div.sidebar > ul.thumb-content > li > img {
+    width: 100%;
+    max-width: 160px;
+    display: block;
+    object-fit: contain;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+div.content-sidebar {
+    max-width: 180px;
+}
+
+div.sidebar > ul > li > div.content-sidebar > h1 {
     font-size: 0.875rem; /* 14px */
-    margin: 5px 0;
+    margin: 0px 0px 5px 0px;
 }
 
-div.sidebar > ul.description > li > p {
+div.sidebar > ul > li > div.content-sidebar > p {
     font-size: 0.75rem; /* 12px */
+    margin: 0px 0px 5px 0px;
 }
+
 
