@@ -38,11 +38,14 @@ header input[type="text"] {
 main {
     background: rgb(247, 247, 247);
     padding: 20px 60px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 div.video > iframe {
-    width: 853px;
-    height: 480px;
+    width: 951px;
+    height: 580px;
 }
 
 div.video-principal {
@@ -56,8 +59,23 @@ div.video-principal > h1 {
     margin: 10px 0;
 }
 
+div.video-actions > ul {
+    max-width: 902px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px
+}
+
 div.video-actions > ul > li {
     display: inline-block;
+
+}
+
+div.video-actions > img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
 }
 
 div.video-principal > h2 {
@@ -71,5 +89,52 @@ div.video-principal > p {
     font-size: calc(1rem - 2px);
     color: #515151;
     width: 45%;
+}
+
+div.sidebar {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 400px;
+    min-height: 1000px;
+}
+
+div.sidebar > ul.thumb {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 20px 0;
+}
+
+div.sidebar > ul.thumb > li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+div.sidebar > ul.thumb > li > img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+div.sidebar > ul.description {
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-around;
+    gap: 0;
+}
+
+div.sidebar > ul.description > li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+div.sidebar > ul.description > li > h1 {
+    font-size: 0.875rem; /* 14px */
+    margin: 5px 0;
+}
+
+div.sidebar > ul.description > li > p {
+    font-size: 0.75rem; /* 12px */
 }
 
