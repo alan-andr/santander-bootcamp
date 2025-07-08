@@ -127,11 +127,13 @@ div.content-sidebar {
 div.sidebar > ul > li > div.content-sidebar > h1 {
     font-size: 0.875rem; /* 14px */
     margin: 0px 0px 5px 0px;
+    font-family: 'Roboto';
 }
 
 div.sidebar > ul > li > div.content-sidebar > p {
     font-size: 0.75rem; /* 12px */
     margin: 0px 0px 5px 0px;
+    font-family: 'Roboto';
 }
 
 
