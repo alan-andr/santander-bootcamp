@@ -7,4 +7,4 @@ Santander bootcamp de frontend 2025, aqui ficará exerícios e projetos em rela�
 
 ## [Landing Page - Trilha CSS](https://alan-andr.github.io/santander-bootcamp/trilha-css/index.html)
 
-
+## [Projeto clone de página - Youtube](https://alan-andr.github.io/santander-bootcamp/clone-youtube/index.html)
