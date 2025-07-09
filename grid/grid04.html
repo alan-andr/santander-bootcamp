@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino - Grid Layout</title>
+    <style>
+
+        .grid {
+            background-color: gray;
+            padding: 10px;
+
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: repeat(2,1);
+        }
+
+        .item {
+            background-color: yellowgreen;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">item 05</div>
+        <div class="item">item 06</div>
+        <div class="item">item 07</div>
+    </div>
+</body>
+</html>
