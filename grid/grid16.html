@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-area</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            grid-template-areas: 
+            "header header header header" 
+            "main main . sidebar" 
+            "footer footer footer footer";
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+</body>
+</html>

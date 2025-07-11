@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-area</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 3fr 1fr;
+            grid-template-areas: "logo navbar"
+            "sidebar main"
+            "sidebar footer";
+        }
+
+        .logo {
+            background-color: lightblue;
+            grid-area: logo;
+        }
+
+        nav {
+            background-color: yellow;
+            grid-area: navbar;
+        }
+
+        aside {
+            background-color: palevioletred;
+            grid-area: sidebar;
+        }
+
+        main {
+            background-color: skyblue;
+            grid-area: main;
+        }
+
+        footer {
+            background-color: palegreen;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="../trilha-css/images/logo.png" alt="Trilha de CSS - DIO" width="80px">
+    </div>
+
+    <nav>navbar</nav>
+
+    <aside>sidebar</aside>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolores ab accusantium similique harum eveniet, autem unde voluptatibus dignissimos aperiam, nam eius voluptatem a omnis totam ratione nisi. Deserunt, obcaecati!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam nemo laudantium, quos quae odio repellat iusto consectetur dicta voluptatibus quaerat cumque minus ut est quisquam? Maiores libero tempora veritatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora accusantium provident beatae incidunt culpa, iste dolores sunt earum laudantium blanditiis assumenda eveniet eos officia in ut tenetur consectetur cupiditate.</p>
+    </main>
+
+    <footer>Oi, eu sou um rodapé!</footer>
+</body>
+</html>
