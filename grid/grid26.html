@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            border: 1px solid black;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 150px);
+            grid-template-areas:
+            "header header header header"
+            "sidebar content content ads"
+            "sidebar content content ads"
+            "footer footer footer footer";
+        }
+
+        header {
+            background-color: lightblue;
+            grid-area: header;
+        }
+
+        nav {
+            background-color: lightgoldenrodyellow;
+            grid-area: sidebar;
+        }
+
+        main {
+            background-color: whitesmoke;
+            grid-area: content;
+        }
+
+        aside {
+            background-color: yellow;
+            grid-area: ads;
+        }
+
+        footer {
+            background-color: violet;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Sidebar</nav>
+    <main>Content</main>
+    <aside>Ads</aside>
+    <footer>Footer</footer>
+</body>
+</html>

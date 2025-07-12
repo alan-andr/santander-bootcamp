@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Grid Layout</title>
+    <style>
+        body {
+            border: 1px solid black;
+
+            display: grid;
+            grid-template: auto 1fr auto / repeat(3, 1fr);
+            grid-template-areas: 
+            "header header header"
+            "main main ."
+            "footer footer footer";
+        }
+
+        header {
+            background-color: skyblue;
+            grid-area: header;
+        }
+
+        main {
+            background-color: seagreen;
+            grid-area: main;
+        }
+
+        footer {
+            background-color: salmon;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <footer>Footer</footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout</title>
+    <style>
+        .grid {
+            background-color: lightgray;
+
+            display: grid;
+            grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+
+            border: 1px solid black;
+        }
+
+        .item-1 {
+            background-color: aliceblue;
+            grid-row: 1 / span 2;
+        }
+
+        .item-2 {
+            background-color: violet;
+            grid-column: 2 / span 2;
+        }
+
+        .item-3 {
+            background-color: teal;
+        }
+
+        .item-4 {
+            background-color: seagreen;
+        }
+
+        .item-5 {
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+        <div class="item item-5">Item 5</div>
+    </div>
+</body>
+</html>
