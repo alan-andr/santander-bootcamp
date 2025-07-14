@@ -200,7 +200,7 @@ section.final-section > img {
 
 footer {
     max-width: 100%;
-    min-height: 134px;
+    height: 134px;
 
     background-color: #23272A;
 
@@ -211,7 +211,5 @@ footer {
 
 footer > img {
     width: 100%;
-    max-width: 230px;
-    min-height: 63px;
-    object-fit: cover;
+    max-width: 200px;
 }

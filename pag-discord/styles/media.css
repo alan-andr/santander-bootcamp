@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 
+
+Breakpoints
+320px (smartphones pequenos) 
+768px (tablets) 
+1024px (tablets grandes ou desktops pequenos) 
+1200px (desktops)  
+
+*/
+
+@media screen and (max-width: 480px) {
+   header > section.header-content > h1 {
+        max-width: 278px;
+
+        font-size: 2rem;
+    }
+
+    header > section.header-content > p {
+        max-width: 350px;
+
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    header > section.header-content > div.buttons {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px 0;
+    }
+
+    header > section.header-content > div.buttons > button {
+        min-width: 250px;
+    }
+    
+    section.image-text {
+        margin: 30px 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    section.text-image {
+        padding: 30px 0;
+
+        display: flex;
+        flex-flow: column-reverse nowrap;
+    }
+
+    div.text > h2 {
+        font-size: 1.5rem;
+    }
+
+    div.text > p {
+        font-size: 1rem;
+    }
+
+    section.final-section > h2 {
+        font-size: 2rem;
+    }
+
+    section.final-section > p {
+        font-size: 1rem;
+        max-width: 350px;
+        text-align: justify;
+    }
+
+    footer > a > img {
+        width: 100%;
+        max-width: 162px;
+        height: 45px;
+    }
+}
