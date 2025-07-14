@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+}
+
 :root {
     --font01: 'Luckiest Guy', Arial, Helvetica, sans-serif;
     --font02: 'Open Sans', Arial, Helvetica, sans-serif;  
@@ -82,13 +86,132 @@ section.header-content > div.buttons > .button {
 section.header-content > div.buttons > button.white-button {
     background-color: white;
     color: black;
+
+    &:hover {
+        background-color: rgb(230, 230, 230);
+        transition-duration: .5s;
+    }
+
 }
 
 section.header-content > div.buttons > button.black-button {
     background-color: rgb(29, 28, 28);
     color: white;
+    
+    &:hover {
+        background-color: rgb(78, 78, 78);
+        transition-duration: .5s;
+    }
 }
 
+section.image-text {
+    width: 100%;
+    min-height: 448px;
 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
+div.image > img {
+    display: block;
+    width: 100%;
+    max-width: 607px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.225));
+}
 
+div.text {
+    max-width: 351px;
+
+    font-family: var(--font02);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 0px;
+}
+
+div.text > h2 {
+    text-wrap: balance;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+div.text > p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+section.text-image {
+    width: 100%;
+    min-height: 448px;
+
+    background-color: #F6F6F6;
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.final-section {
+    width: 100%;
+    background-color: #F6F6F6;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px 0;
+}
+
+section.final-section > h2 {
+    max-width: 608px;
+    margin-top: 35px;
+
+    font-family: var(--font01);
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section.final-section > p {
+    max-width: 802px;
+
+    font-family: var(--font02);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+
+section.final-section > img {
+    width: 100%;
+    max-width: 784px;
+    max-height: 508px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.256));
+}
+
+footer {
+    max-width: 100%;
+    min-height: 134px;
+
+    background-color: #23272A;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > img {
+    width: 100%;
+    max-width: 230px;
+    min-height: 63px;
+    object-fit: cover;
+}
