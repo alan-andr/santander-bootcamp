@@ -8,7 +8,7 @@ notas.push(5)
 
 let soma = 0;
 
-for (let contador = 0; contador < notas.length; contador++) {
+for (let contador = 0; contador <= notas.length; contador++) {
     console.log(notas[contador]);
     let nota = notas[contador];
     soma = soma + nota;
