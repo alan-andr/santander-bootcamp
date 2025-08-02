@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1D1D1E;
+    --secondary-color: #EFFFFA;
+    
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color-constrast)
+}
